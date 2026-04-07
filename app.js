@@ -2,14 +2,14 @@
   "use strict";
 
   const PRIORITIES = [
-    "Maximize retirement contributions",
+    "Max out retirement savings",
     "House renovations & updates",
     "Travel to see grandchildren",
     "529 plans for grandkids",
-    "Build up sinking funds",
     "Support for aging parents",
     "Vehicle upgrades",
-    "Accelerate Brett's early retirement"
+    "Generous gifts & giving",
+    "Moderate gifts & giving"
   ];
 
   // Build all unique pairs (28 total for 8 items)
