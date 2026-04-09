@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Priority Exercise — Greater Than Financial</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div style="font-size:1.4rem;font-weight:800;color:#2B3990;letter-spacing:0.02em;margin-bottom:0.15rem;">
+        GREATER<span style="color:#00AEEF">THAN</span> FINANCIAL
+      </div>
+      <h1>Vehicle Priority Exercise</h1>
+    </div>
+
+    <!-- WELCOME -->
+    <div id="screen-welcome" class="screen active">
+      <p class="welcome-text">
+        Shopping for a vehicle means juggling a lot of competing wants. This short exercise
+        will help clarify which features matter most to <strong>you</strong>.
+      </p>
+      <p class="welcome-text">
+        You'll see two priorities at a time. Just pick the one that feels more important
+        to you in your next vehicle. There are no wrong answers. It takes about <strong>3 minutes</strong>.
+      </p>
+      <p class="welcome-text">
+        <strong>Roger and Carol should each complete this separately</strong> so
+        Wakefield can see where you agree and where you differ.
+      </p>
+
+      <select id="name-select" class="name-select">
+        <option value="">Who's taking the exercise?</option>
+        <option value="Roger">Roger</option>
+        <option value="Carol">Carol</option>
+      </select>
+
+      <button id="start-btn" class="btn btn-primary" disabled>Let's go</button>
+    </div>
+
+    <!-- COMPARISON -->
+    <div id="screen-compare" class="screen">
+      <div class="progress-wrap">
+        <div class="progress-label" id="progress-label">1 of 28</div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+
+      <p class="comparison-prompt">Which matters more to you in your next vehicle?</p>
+
+      <div class="choices">
+        <button id="choice-a" class="choice-btn"></button>
+        <div class="vs-divider">or</div>
+        <button id="choice-b" class="choice-btn"></button>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="screen-results" class="screen">
+      <p class="results-intro">
+        <strong><span id="results-name"></span>'s vehicle priorities</strong>, ranked by how often
+        you chose each one:
+      </p>
+
+      <ol class="results-list" id="results-list"></ol>
+
+      <div class="results-note">
+        This ranking reflects your gut instincts, which is the point! Wakefield will
+        use both your results to help narrow down vehicle options that match what
+        matters most to each of you.
+      </div>
+
+      <button id="send-btn" class="btn btn-send" style="width:100%;">
+        Send my results to Wakefield
+      </button>
+      <div id="sent-msg" class="sent-msg" style="display:none;"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &copy; Greater Than Financial LLC
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
